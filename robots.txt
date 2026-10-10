@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# URLs antigas do site institucional (redirecionar com 301 no hospedador)
+# /sobre-ns  -> /estudio.html
+# /infraestrutura -> /estudio.html#infraestrutura
+# /duvidas (com acento) -> /duvidas.html
+
+Sitemap: https://www.coworkingfitness.com/sitemap.xml
