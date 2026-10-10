@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="Monograma COWORK FITNESS">
+  <defs>
+    <linearGradient id="coworkGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7A2598"/>
+      <stop offset="1" stop-color="#67068A"/>
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="13" fill="url(#coworkGrad)"/>
+  <path d="M31 15.6A11 11 0 1 0 31 32.4" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="31" cy="24" r="3.2" fill="#D5BDDE"/>
+</svg>

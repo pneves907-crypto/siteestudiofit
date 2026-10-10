@@ -290,29 +290,49 @@ a:hover {
 
 .logo {
   display: inline-flex;
-  align-items: baseline;
-  gap: 0.45rem;
+  align-items: center;
+  gap: 0.6rem;
   text-decoration: none;
-  color: var(--roxo-principal);
+  padding: 0.3rem 0;
+}
+
+.logo__marca {
+  width: 40px;
+  height: 40px;
+  flex: none;
+  border-radius: 11px;
+  box-shadow: 0 4px 14px rgba(103, 6, 138, 0.28);
+  transition: transform var(--transicao);
+}
+
+.logo:hover .logo__marca {
+  transform: scale(1.05);
+}
+
+.logo__texto {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.logo__nome {
   font-family: var(--fonte-titulo);
   font-weight: 700;
-  font-size: 1.4rem;
-  letter-spacing: 0.06em;
+  font-size: 1.28rem;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  line-height: 1;
-  padding: 0.4rem 0;
+  color: var(--grafite);
 }
 
 .logo__fitness {
   font-family: var(--fonte-texto);
-  font-size: 0.72rem;
+  font-size: 0.6rem;
   font-weight: 600;
-  letter-spacing: 0.34em;
-  color: var(--grafite);
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  color: var(--roxo-secundario);
+  margin-top: 0.28rem;
 }
-
-/* OBSOLOTO: substituir por <img> com o arquivo oficial da marca (SVG/PNG),
-   conforme PRD 6.2 — a tipografia original não deve ser reconstruída. */
 
 .menu {
   display: flex;
@@ -696,6 +716,18 @@ a:hover {
   color: rgba(255, 255, 255, 0.88);
 }
 
+/* Links simples dentro da faixa roxa precisam de contraste: branco e sublinhado */
+.faixa-contato a:not(.btn) {
+  color: var(--branco);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.faixa-contato a:not(.btn):hover {
+  color: var(--lilas-claro);
+}
+
 .faixa-contato .sobretitulo {
   color: var(--lilas-claro);
 }
@@ -983,12 +1015,12 @@ a:hover {
   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
 }
 
-.rodape .logo {
-  color: var(--lilas-claro);
+.rodape .logo__nome {
+  color: var(--branco);
 }
 
 .rodape .logo__fitness {
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--lilas-claro);
 }
 
 .rodape h2 {
